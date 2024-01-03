@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    outline: 0
+}
+
+:root {
+    --color_0: #333333;
+    --color_1: #fdfdfd;
+    --color_2: #b8b0b0;
+    --color_3: #ffffff;
+    --color_4: #696767;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color_0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: var(--color_1);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 20px;
+    border: 1px solid var(--color_2);
+}
+
+form input:focus {
+    outline: 1px solid var(--color_2);
+}
+
+form label {
+     font-weight: bold;
+}
+
+form button {
+    border: none;
+    background-color: var(--color_0);
+    color: var(--color_3);
+    border-radius: 5px;
+    font-size: 18px;
+    height: 30px;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--color_4);
+}
+
+.errorText {
+    font-size: 12px;
+    color: red;
+    text-align: right;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+        <script src="./assets/javascript/validateCPF.js" defer></script>
+		<script src="./assets/javascript/app.js" defer></script>
+	</head>
+	<body>
+		<section class="container">
+			<h1>Formulário de Cadastro</h1>
+			<ul>
+				<li>Nenhum campo pode estar vazio</li>
+				<li>Usuário só poderá conter letras e/ou números</li>
+				<li>Usuário deverá ter entre 3 e 12 caracteres</li>
+				<li>Senha precisar ter entre 6 e 12 caracteres</li>
+			</ul>
+			<form action="./assets/test.html" method="get" class="form">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" class="name validate" />
+	
+                <label for="lastname">Sobrenome</label>
+				<input type="text" name="lastname" id="lastname" class="lastname validate" />
+    
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" id="cpf" class="cpf validate">
+    
+                <label for="user">Usuário</label>
+				<input type="text" name="user" id="user" class="user validate" />
+	
+                <label for="password">Senha</label>
+				<input type="password" name="password" id="password" class="password validate" />
+	
+                <label for="passwordConfirm">Repetir senha</label>
+				<input type="password" name="passwordConfirm" id="passwordConfirm"
+				class="passwordConfirm validate" />
+    
+                <button type="submit">Enviar</button>
+			</form>
+		</section>
+	</body>
+</html>
